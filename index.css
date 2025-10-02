@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+}
+:root {
+  /* Colores base */
+  --color-bg-dark: #072138;   /* Fondo principal */
+  --color-bg-medium: #1E3A5F; /* Secciones destacadas */
+  --color-bg-light: #A3B8D9;  /* Tarjetas / contenedores */
+
+  /* Tipografía */
+  --color-text-primary: #FFFFFF; /* Texto principal */
+  --color-text-secondary: #E5E7EB; /* Texto secundario / descripciones */
+
+  /* Acentos */
+  --color-accent-gold: #D4AF37; /* Precios, estrellas, detalles */
+
+  /* Opcionales */
+  --color-border: #2C3E50; /* Bordes sutiles */
+  --color-hover: #294766; /* Hover en botones/enlaces */
+}
+body{
+    background-color: var(--color-bg-medium);
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-bg-dark);
+    color: white;
+    padding: 5px;
+    gap:10%;
+    max-width: 1hv;
+    border-bottom: solid var(--color-accent-gold);
+    margin-bottom: 15px;
+
+}
+.top{
+    border-right: solid var(--color-accent-gold);
+    padding-right: 15px;
+    min-width: none;
+    flex-shrink: 1;
+
+}
+.carrusel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    overflow: hidden;
+    
+}
+
+.interno {
+    display: flex;
+    width: 300%;
+    animation: carousel 12s infinite;
+}
+
+@keyframes carousel {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(0); }
+    33.33% { transform: translateX(-33.333%); }
+    58.33% { transform: translateX(-33.333%); }
+    66.66% { transform: translateX(-66.666%); }
+    91.66% { transform: translateX(-66.666%); }
+    100% { transform: translateX(0); }
+}
+
+.slide {
+    position: relative;
+    width: 33.333%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    max-height: 80vh;
+}
+
+.interno__texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.interno__texto p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--color-accent-gold);
+    color: var(--color-bg-dark);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #B8941F;
+    transform: translateY(-2px);
+}
+
+.carrusel:hover .interno {
+    animation-play-state: paused;
+}
+@media(max-width:480px){
+    
+}
