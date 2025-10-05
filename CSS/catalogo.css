@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+  /* Colores base */
+  --color-bg-dark: #072138;   /* Fondo principal */
+  --color-bg-medium: #1E3A5F; /* Secciones destacadas */
+  --color-bg-light: #A3B8D9;  /* Tarjetas / contenedores */
+
+  /* Tipografía */
+  --color-text-primary: #FFFFFF; /* Texto principal */
+  --color-text-secondary: #E5E7EB; /* Texto secundario / descripciones */
+
+  /* Acentos */
+  --color-accent-gold: #D4AF37; /* Precios, estrellas, detalles */
+  --color-accent-gold-low: #d4af37c4;
+
+  /* Opcionales */
+  --color-border: #2C3E50; /* Bordes sutiles */
+  --color-hover: #294766; /* Hover en botones/enlaces */
+}
+
+body{
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-primary);
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: var(--color-accent-gold) solid;
+}
+main{
+    width: 100%;
+    height: auto;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.sello {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.navigation {
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    
+}
+
+.top {
+    border-right: solid var(--color-accent-gold);
+    padding: 8px 10px;
+    align-content: center;
+    box-sizing: border-box;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-text-primary);
+}
+
+.catalogo{
+    width:100% ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+    justify-items: center;
+    margin-top: 50px;
+}
+.reloj{
+    width: 180px;
+    height:300px ;
+    background-color:rgba(256, 256, 256, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border: var(--color-accent-gold) solid 1px ;
+    gap: 20px;
+    
+}
+.reloj h3{
+    font-style:italic ;
+}
+.reloj h3,span,a{
+    align-self: center;
+
+}
+.reloj span{
+    color: var(--color-accent-gold);
+}
+.whatch{
+    border-radius: 10px;
+}
+.reloj a{
+background-color: var(--color-accent-gold);
+padding: 8px;
+border-radius: 10px;
+text-decoration: none;
+color: black;
+}
+.reloj:hover{
+    transform: translateY(-2px);
+}
+
+.presentacion h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: var(--color-accent-gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+.quote{
+    margin:30px;
+    border: var(--color-bg-medium) solid 1px;
+    padding: 20px;
+    border-radius: 20px;
+    font-style: oblique;
+}
+.catalogo{
+    margin: auto;
+}
