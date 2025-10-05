@@ -72,6 +72,10 @@ main{
     color: var(--color-text-primary);
 }
 
+h1{
+    margin-left: 10%;
+}
+
 .catalogo{
     width:100% ;
     display: grid;
@@ -100,8 +104,18 @@ main{
     align-self: center;
 
 }
-.reloj span{
+.reloj span {
     color: var(--color-accent-gold);
+}
+
+.reloj span.disponible {
+    color: black;
+    background-color: rgb(97, 201, 97);
+}
+
+.reloj span.agotado {
+    color: black;
+    background-color: rgb(201, 97, 97);
 }
 .whatch{
     border-radius: 10px;
@@ -135,4 +149,44 @@ color: black;
 }
 .catalogo{
     margin: auto;
+}
+.reloj {
+    width: 180px;
+    height: auto;
+    min-height: 320px;
+    background-color: rgba(256, 256, 256, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border: var(--color-accent-gold) solid 1px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.disponible {
+    align-self: center;
+    color: black;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: auto;
+}
+.agotado {
+    align-self: center;
+    color: black;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.whatch {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: contain;
 }
