@@ -22,8 +22,6 @@
   --color-hover: #294766; /* Hover en botones/enlaces */
 }
 
-body{
-}
 
 header {
     display: flex;
@@ -71,7 +69,6 @@ main{
     color: var(--color-text-primary);
 }
 
-/* --- Carrusel Fade Effect --- */
 .carrusel {
     aspect-ratio: 16/7;
     min-height: 270px;
@@ -145,7 +142,6 @@ main{
     z-index: 2;
     padding: 20px;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.43);
     box-shadow: 0 3px 20px 0 rgba(0,0,0,0.13);
 }
 
@@ -166,6 +162,7 @@ main{
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    margin-top: 15px;
 }
 
 .btn:hover {
