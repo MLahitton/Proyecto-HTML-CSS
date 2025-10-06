@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../../CSS/normalice.css">
+    <link rel="stylesheet" href="../CSS/contacto.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img class="sello" src="../../Assets/Logo.png"></div>
+        <div class="navigation">
+            <a class="top" href="../../index.html">Home</a>
+            <a class="top" href="../Catalogo/catalogo.html">Catalogo</a>
+            <a class="top" href="../../HTML/historia.html">Sobre nosotros</a>
+            <a class="top" href="../../index.html#contacto">Contacto</a>
+        </div>
+    </header>
+    <main>
+        <form class="form-luxtime">
+            <h2 class="form-luxtime__titulo">Contáctanos</h2>
+            <label>
+                Nombre
+                <input type="text" name="nombre" required>
+            </label>
+            <label>
+                Número de contacto
+                <input type="tel" name="contacto" required pattern="[0-9\s\+\-\(\)]{7,}">
+            </label>
+            <label>
+                Correo electrónico
+                <input type="email" name="correo" required>
+            </label>
+            <label>
+                Mensaje
+                <textarea name="mensaje" rows="5" required></textarea>
+            </label>
+            <button type="submit" class="form-luxtime__btn">Enviar</button>
+        </form>
+    </main>
+    
+</body>
+</html>

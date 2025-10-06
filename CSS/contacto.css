@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+  /* Colores base */
+  --color-bg-dark: #072138;   /* Fondo principal */
+  --color-bg-medium: #1E3A5F; /* Secciones destacadas */
+  --color-bg-light: #A3B8D9;  /* Tarjetas / contenedores */
+
+  /* Tipografía */
+  --color-text-primary: #FFFFFF; /* Texto principal */
+  --color-text-secondary: #E5E7EB; /* Texto secundario / descripciones */
+
+  /* Acentos */
+  --color-accent-gold: #D4AF37; /* Precios, estrellas, detalles */
+  --color-accent-gold-low: #d4af37c4;
+
+  /* Opcionales */
+  --color-border: #2C3E50; /* Bordes sutiles */
+  --color-hover: #294766; /* Hover en botones/enlaces */
+}
+
+body{
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-primary);
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: var(--color-accent-gold) solid;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.sello {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.navigation {
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    
+}
+
+.top {
+    border-right: solid var(--color-accent-gold);
+    padding: 8px 10px;
+    align-content: center;
+    box-sizing: border-box;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-text-primary);
+}
+.form-luxtime {
+  background: var(--color-bg-dark, #072138);
+  border-radius: 14px;
+  box-shadow: 0 3px 24px 0 rgba(0,0,0,0.13);
+  padding: 28px 22px 22px 22px;
+  max-width: 400px;
+  margin: 40px auto;
+  color: var(--color-text-primary, #fff);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-luxtime__titulo {
+  text-align: center;
+  color: var(--color-accent-gold, #D4AF37);
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.form-luxtime label {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-weight: 500;
+  color: var(--color-accent-gold, #D4AF37);
+  font-size: 1rem;
+}
+
+.form-luxtime input,
+.form-luxtime textarea {
+  background: var(--color-bg-light, #A3B8D9);
+  color: var(--color-bg-dark, #072138);
+  border: 1.5px solid var(--color-accent-gold, #D4AF37);
+  border-radius: 7px;
+  padding: 8px 10px;
+  font-size: 1rem;
+  margin-top: 2px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-luxtime input:focus,
+.form-luxtime textarea:focus {
+  border-color: var(--color-hover, #294766);
+}
+
+.form-luxtime__btn {
+  background: var(--color-accent-gold, #D4AF37);
+  color: var(--color-bg-dark, #072138);
+  border: none;
+  border-radius: 7px;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.form-luxtime__btn:hover {
+  background: #b8941f;
+  transform: translateY(-1.5px) scale(1.03);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
