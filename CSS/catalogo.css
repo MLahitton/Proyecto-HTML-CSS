@@ -147,9 +147,7 @@ color: black;
     border-radius: 20px;
     font-style: oblique;
 }
-.catalogo{
-    margin: auto;
-}
+
 .reloj {
     width: 180px;
     height: auto;
@@ -189,4 +187,399 @@ color: black;
     height: auto;
     max-height: 150px;
     object-fit: contain;
+}
+.pie{
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    padding: 0;
+}
+.footcontent {
+    display: flex;
+    gap: 60px;
+    padding-left: 10px;
+    background-color: var(--color-bg-dark);
+    color: white;
+    height: 200px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.footcontent ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footcontent ul li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    color: var(--color-text-secondary);
+}
+
+.footcontent ul li::before {
+    content: '◆';
+    color: var(--color-accent-gold);
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.footcontent a{
+    text-decoration: none;
+    color: white;
+}
+
+/* =============================================== */
+/* RESPONSIVE DESIGN - TABLET Y LAPTOP */
+/* =============================================== */
+
+/* TABLET - iPad y dispositivos similares (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* Header ajustes para tablet */
+    header {
+        padding: 8px 20px;
+    }
+    
+    .sello {
+        height: 90px;
+    }
+    
+    .navigation {
+        gap: 2%;
+    }
+    
+    .top {
+        padding: 6px 10px;
+        height: 30px;
+        font-size: 20px;
+    }
+    
+    /* Título principal para tablet */
+    h1 {
+        margin-left: 5%;
+    }
+    
+    .presentacion h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        letter-spacing: 0.5px;
+    }
+    
+    /* Quote para tablet */
+    .quote {
+        margin: 15px;
+        padding: 18px;
+        border-radius: 23px;
+        font-size: 28px;
+    }
+    
+    /* Catálogo para tablet - similar a destacados */
+    .catalogo {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 55px;
+        max-width: 600px;
+        margin: 22px ;
+        padding: 20px;
+    }
+    
+    .reloj {
+        width: 200px;
+        height: 300px;
+        min-height: 220px;
+        padding: 10px;
+        gap: 8px;
+        border-radius: 25px;
+    }
+    
+    .reloj h3 {
+        font-size: 30px;
+    }
+    .reloj span{
+        font-size: 20px;
+    }
+    .reloj a {
+        padding: 6px 8px;
+        font-size: 20px;
+    }
+    
+    .whatch {
+        max-height: 100px;
+        object-fit: contain;
+    }
+    
+    .disponible, .agotado {
+        font-size: 18px;
+        padding: 3px 6px;
+    }
+    
+    /* Footer para tablet */
+    .pie {
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+    .footcontent {
+        height: 200px;
+        padding-top: 25px;
+        padding-left: 15px;
+        gap: 30%;
+    }
+    
+    .footcontent ul li {
+        padding-left: 40px;
+        margin-bottom: 4px;
+        font-size: 28px;
+    }
+    
+    .footcontent ul li::before {
+        font-size: 28px;
+        margin-right: 20px;
+    }
+    
+    .footcontent a {
+        font-size: 28px;
+    }
+}
+
+/* LAPTOP - Pantallas de escritorio (1025px+) */
+@media (min-width: 1025px) {
+    
+    /* Header ajustes para laptop */
+    header {
+        padding: 10px 30px;
+    }
+    
+    .sello {
+        height: 120px;
+    }
+    
+    .navigation {
+        gap: 2.5%;
+    }
+    
+    .top {
+        padding: 8px 12px;
+        height: 35px;
+        font-size: 20px;
+        transition: all 0.3s ease;
+        border-radius: 4px;
+    }
+    
+    .top:hover {
+        background-color: var(--color-accent-gold);
+        color: var(--color-bg-dark);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    }
+    
+    /* Título principal para laptop */
+    h1 {
+        margin-left: 8%;
+    }
+    
+    .presentacion h1 {
+        font-size: 50px;
+        margin-bottom: 80px;
+        letter-spacing: 1px;
+    }
+    
+    /* Quote para laptop */
+    .quote {
+        margin: 50px 30px;
+        padding: 25px;
+        border-radius: 40px;
+        font-size: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Catálogo para laptop - similar a destacados */
+    .catalogo {
+        width: 90%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 15px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    
+    .reloj {
+        width: 250px;
+        height: 400px;
+        min-height: 400px;
+        padding: 15px;
+        gap: 10px;
+        transition: all 0.3s ease;
+        border-width: 1px;
+    }
+    
+    .reloj:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
+        border-color: var(--color-accent-gold);
+    }
+    
+    .reloj img {
+        width: 100%;
+        object-fit: fill;
+    }
+    
+    .reloj h3 {
+        font-size: 30px;
+        margin-bottom: 6px;
+    }
+    
+    .reloj p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .reloj a {
+        padding: 8px 12px;
+        font-size: 20px;
+        transition: all 0.3s ease;
+    }
+    
+    .reloj a:hover {
+        transform: scale(1.02);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    }
+    
+    .reloj span {
+        font-size: 28px;
+    }
+    
+    .whatch {
+        object-fit: contain;
+        transition: transform 0.3s ease;
+    }
+    
+    .reloj:hover .whatch {
+        transform: scale(1.02);
+    }
+    
+    .disponible, .agotado {
+        font-size: 16px;
+        padding: 6px 12px;
+        transition: transform 0.3s ease;
+    }
+    
+    /* Footer para laptop */
+    .pie {
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .footcontent {
+        height: 120px;
+        padding-top: 18px;
+        padding-left: 25px;
+        gap: 35px;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding-right: 25px;
+    }
+    
+    .footcontent .izq {
+        flex: 1;
+    }
+    
+    .footcontent .der {
+        flex: 1;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+    
+    .footcontent ul li {
+        padding-left: 12px;
+        margin-bottom: 5px;
+        font-size: 20px;
+        transition: color 0.3s ease;
+    }
+    
+    .footcontent ul li:hover {
+        color: var(--color-text-primary);
+    }
+    
+    .footcontent ul li::before {
+        font-size: 10px;
+        transition: transform 0.3s ease;
+    }
+    
+    .footcontent ul li:hover::before {
+        transform: scale(1.1);
+    }
+    
+    .footcontent a {
+        font-size: 28px;
+        transition: all 0.3s ease;
+        padding: 4px 8px;
+        border-radius: 3px;
+    }
+    
+    .footcontent a:hover {
+        color: var(--color-accent-gold);
+        background-color: rgba(212, 175, 55, 0.1);
+        transform: translateY(-1px);
+    }
+}
+
+/* PANTALLAS GRANDES - Monitores grandes (1440px+) */
+@media (min-width: 1440px) {
+    
+    /* Título principal para pantallas grandes */
+    h1 {
+        margin-left: 10%;
+    }
+    
+    .presentacion h1 {
+        font-size: 45px;
+        letter-spacing: 1.5px;
+    }
+    
+    /* Quote para pantallas grandes */
+    .quote {
+        margin: 60px 40px;
+        padding: 30px;
+        border-radius: 55px;
+        font-size: 28px;
+    }
+    
+    /* Catálogo para pantallas grandes */
+    .catalogo {
+        width: 90%;
+        padding: 25px;
+        gap: 24px;
+        margin: 20px auto;
+    }
+    
+    .reloj {
+        width: 300px;
+        height: 400px;
+        min-height: 400px;
+        padding: 18px;
+        border-radius: 25px;
+    }
+    
+    .reloj h3 {
+        font-size: 28px;
+    }
+    
+    .disponible, .agotado {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+    
+    /* Footer para pantallas grandes */
+    .footcontent {
+        max-width: 100%;
+        height: 140px;
+        padding-top: 22px;
+    }
+    
+    .der a {
+        font-size: 28px;
+    }
 }

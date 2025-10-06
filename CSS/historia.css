@@ -339,3 +339,280 @@ p{
     border-radius: 10px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
 }
+
+/* =============================================== */
+/* RESPONSIVE DESIGN - TABLET Y LAPTOP */
+/* =============================================== */
+
+/* TABLET - iPad y dispositivos similares (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* Header ajustes para tablet */
+    header {
+        padding: 15px 20px;
+    }
+    
+    .sello {
+        height: 60px;
+    }
+    
+    .navigation {
+        gap: 3%;
+    }
+    
+    .top {
+        padding: 10px 15px;
+        height: 50px;
+        font-size: 16px;
+    }
+    
+    /* Reloj interactivo para tablet */
+    .story-clock {
+        margin: 80px 0;
+    }
+    
+    .clock-face {
+        width: 450px;
+        height: 450px;
+        border: 5px solid #D4AF37;
+    }
+    
+    .hour {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    
+    /* Reposicionar horas para tablet (450px) */
+    .hour1  { top: 50px;  left: 270px; }
+    .hour2  { top: 105px;  left: 325px; }
+    .hour3  { top: 180px; left: 355px; }
+    .hour4  { top: 255px; left: 325px; }
+    .hour5  { top: 325px; left: 270px; }
+    .hour6  { top: 345px; left: 190px; }
+    .hour7  { top: 325px; left: 110px; }
+    .hour8  { top: 255px; left: 70px;  }
+    .hour9  { top: 180px; left: 40px;  }
+    .hour10 { top: 105px; left: 80px;  }
+    .hour11 { top: 50px;  left: 110px;  }
+    .hour12 { top: 25px;  left: 190px; }
+    
+    .clock-center {
+        width: 220px;
+        height: 220px;
+        padding: 25px;
+    }
+    
+    .story-text {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+    
+    /* Guía para tablet */
+    .guia {
+        margin: 20px 30px;
+        padding: 30px;
+        border-radius: 20px;
+    }
+    
+    h1 {
+        font-size: 48px;
+        margin: 40px 0;
+    }
+    
+    h1::after {
+        width: 140px;
+        height: 4px;
+    }
+    
+    p {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+    
+    /* Mosaico para tablet */
+    .mosaico {
+        height: 600px;
+        margin: 30px;
+        border: 6px solid #D4AF37;
+        gap: 3px;
+    }
+}
+
+/* LAPTOP - Pantallas de escritorio (1025px+) */
+@media (min-width: 1025px) {
+    
+    /* Header ajustes para laptop */
+    header {
+        padding: 20px 40px;
+    }
+    
+    .sello {
+        height: 70px;
+    }
+    
+    .navigation {
+        gap: 4%;
+    }
+    
+    .top {
+        padding: 12px 20px;
+        height: 55px;
+        font-size: 18px;
+        transition: all 0.3s ease;
+    }
+    
+    .top:hover {
+        background-color: var(--color-accent-gold);
+        color: var(--color-bg-dark);
+        transform: translateY(-2px);
+    }
+    
+    /* Reloj interactivo para laptop */
+    .story-clock {
+        margin: 100px 0;
+    }
+    
+    .clock-face {
+        width: 500px;
+        height: 500px;
+        border: 6px solid #D4AF37;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    }
+    
+    .hour {
+        width: 55px;
+        height: 55px;
+        font-size: 1.4rem;
+        transition: all 0.3s ease;
+    }
+    
+    .hour:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+    }
+    
+    /* Reposicionar horas para laptop (500px) */
+    .hour1  { top: 55px;  left: 300px; }
+    .hour2  { top: 115px;  left: 360px; }
+    .hour3  { top: 200px; left: 395px; }
+    .hour4  { top: 285px; left: 360px; }
+    .hour5  { top: 360px; left: 300px; }
+    .hour6  { top: 385px; left: 210px; }
+    .hour7  { top: 360px; left: 120px; }
+    .hour8  { top: 285px; left: 80px;  }
+    .hour9  { top: 200px; left: 45px;  }
+    .hour10 { top: 115px; left: 90px;  }
+    .hour11 { top: 55px;  left: 120px;  }
+    .hour12 { top: 30px;  left: 210px; }
+    
+    .clock-center {
+        width: 250px;
+        height: 250px;
+        padding: 30px;
+        border-width: 2px;
+    }
+    
+    .story-text {
+        font-size: 1.2rem;
+        line-height: 1.8;
+    }
+    
+    /* Guía para laptop */
+    .guia {
+        margin: 30px 60px;
+        padding: 40px;
+        border-radius: 25px;
+        border-width: 3px;
+    }
+    
+    h1 {
+        font-size: 54px;
+        margin: 50px 0;
+        letter-spacing: 3px;
+    }
+    
+    h1::after {
+        width: 160px;
+        height: 5px;
+        bottom: -15px;
+    }
+    
+    p {
+        font-size: 20px;
+        line-height: 1.8;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    /* Mosaico para laptop */
+    .mosaico {
+        height: 700px;
+        margin: 40px 60px;
+        border: 8px solid #D4AF37;
+        gap: 4px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .mosaico div:hover {
+        transform: scale(1.02);
+        transition: transform 0.3s ease;
+    }
+    
+    .mosaico div:active {
+        top: -8px;
+        left: -8px;
+        width: calc(100% + 16px);
+        height: calc(100% + 16px);
+    }
+}
+
+/* PANTALLAS GRANDES - Monitores grandes (1440px+) */
+@media (min-width: 1440px) {
+    
+    .guia {
+        margin: 40px 100px;
+        padding: 50px;
+    }
+    
+    h1 {
+        font-size: 60px;
+    }
+    
+    p {
+        font-size: 22px;
+        max-width: 1200px;
+    }
+    
+    .clock-face {
+        width: 550px;
+        height: 550px;
+    }
+    
+    /* Reposicionar horas para pantallas grandes (550px) */
+    .hour1  { top: 70px;  left: 350px; }
+    .hour2  { top: 140px; left: 420px; }
+    .hour3  { top: 240px; left: 460px; }
+    .hour4  { top: 340px; left: 420px; }
+    .hour5  { top: 415px; left: 350px; }
+    .hour6  { top: 450px; left: 240px; }
+    .hour7  { top: 415px; left: 130px; }
+    .hour8  { top: 340px; left: 60px;  }
+    .hour9  { top: 240px; left: 20px;  }
+    .hour10 { top: 140px; left: 60px;  }
+    .hour11 { top: 70px;  left: 130px;  }
+    .hour12 { top: 35px;  left: 240px; }
+    
+    .clock-center {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .mosaico {
+        height: 800px;
+        margin: 50px auto;
+        max-width: 1400px;
+    }
+}

@@ -128,7 +128,7 @@ main{
     height: auto;
     object-fit: contain;
     display: block;
-    max-height: 80vh;
+    height: 80vh;
     filter: brightness(0.7);
 }
 
@@ -309,6 +309,572 @@ ul{
     left: 0;
     top: 2px;
 }
-@media(max-width:480px){
+
+.pie{
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.footcontent {
+    display: flex;
+    gap: 60px;
+    padding-left: 10px;
+    background-color: var(--color-bg-dark);
+    color: white;
+    height: 200px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.footcontent ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footcontent ul li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    color: var(--color-text-secondary);
+}
+
+.footcontent ul li::before {
+    content: '◆';
+    color: var(--color-accent-gold);
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.footcontent a{
+    text-decoration: none;
+    color: white;
+}
+
+/* =============================================== */
+/* RESPONSIVE DESIGN - TABLET Y LAPTOP */
+/* =============================================== */
+
+/* TABLET - iPad y dispositivos similares (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
     
+    /* Header ajustes para tablet */
+    header {
+        padding: 8px 20px;
+    }
+    
+    .sello {
+        height: 55px;
+    }
+    
+    .navigation {
+        gap: 2%;
+    }
+    
+    .top {
+        padding: 6px 10px;
+        height: 30px;
+        font-size: 8px;
+    }
+    
+    /* Carrusel para tablet */
+    body .carrusel {
+        aspect-ratio: 16/8 ;
+        min-height: 250px ;
+        width: 100vw ;
+        max-width: 100vw ;
+        margin: 0 ;
+        padding: 0 ;
+        border-radius: 0 ;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .interno__texto {
+        top: 35%;
+        left: 15%;
+        padding: 15px;
+    }
+    
+    .interno__texto p {
+        font-size: 13px;
+        width: 80px;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+        font-size: 11px;
+        margin-top: 10px;
+    }
+    
+    /* Destacados para tablet */
+    .destacados {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 8px;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    
+    .starred {
+        width: 140px;
+        height: 220px;
+        padding: 10px;
+        gap: 8px;
+    }
+    
+    .starred h3 {
+        font-size: 13px;
+    }
+    
+    .starred a {
+        padding: 6px 8px;
+        font-size: 10px;
+    }
+    
+    .whatch {
+        max-height: 100px;
+        object-fit: contain;
+    }
+    
+    /* Historia para tablet */
+    .Historia {
+        padding: 15px 20px;
+        margin: 15px 10px;
+        border-radius: 8px;
+    }
+    
+    .Historia h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        letter-spacing: 0.5px;
+    }
+    
+    .Historia h3::after {
+        width: 40px;
+        height: 1px;
+        bottom: -5px;
+    }
+    
+    .Historia p {
+        font-size: 11px;
+        line-height: 1.4;
+        max-width: 400px;
+        margin-bottom: 15px;
+        text-indent: 15px;
+    }
+    
+    .Historia ul {
+        max-width: 350px;
+        margin: 10px auto;
+    }
+    
+    .Historia ul li {
+        padding-left: 12px;
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
+    
+    .Historia ul li::before {
+        font-size: 9px;
+        top: 0px;
+    }
+    
+    .Historia img {
+        max-width: 300px;
+        margin: 12px auto;
+        border-width: 1px;
+    }
+    
+    /* Footer para tablet */
+    .pie {
+        width: 100%;
+    }
+    
+    .footcontent {
+        height: 200px;
+        padding-top: 25px;
+        padding-left: 15px;
+        gap: 60%;
+    }
+    
+    .footcontent ul li {
+        padding-left: 10px;
+        margin-bottom: 4px;
+        font-size: 13px;
+    }
+    
+    .footcontent ul li::before {
+        font-size: 13px;
+    }
+    
+    .footcontent a {
+        font-size: 13px;
+    }
+}
+
+/* LAPTOP - Pantallas de escritorio (1025px+) */
+@media (min-width: 1025px) {
+    
+    /* Header ajustes para laptop */
+    header {
+        padding: 10px 30px;
+    }
+    
+    .sello {
+        height: 80px;
+    }
+    
+    .navigation {
+        gap: 2.5%;
+    }
+    
+    .top {
+        padding: 8px 12px;
+        height: 35px;
+        font-size: 20px;
+        transition: all 0.3s ease;
+        border-radius: 4px;
+    }
+    
+    .top:hover {
+        background-color: var(--color-accent-gold);
+        color: var(--color-bg-dark);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    }
+    
+    /* Carrusel para laptop */
+    body .carrusel {
+        aspect-ratio: 16/10 ;
+        min-height: 450px ;
+        width: 100vw ;
+        max-width: 100vw ;
+        margin: 0 ;
+        padding: 0 ;
+        border-radius: 0 ;
+        overflow: hidden;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    
+    .slide img {
+        filter: brightness(0.8);
+        transition: filter 0.3s ease;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+    
+    .slide {
+        width: 100% !important;
+        height: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    .carrusel:hover .slide img {
+        filter: brightness(0.9);
+    }
+    
+    .interno__texto {
+        top: 20%;
+        left: 12%;
+        padding: 18px;
+        border-radius: 8px;
+        backdrop-filter: blur(8px);
+        background: rgba(7, 33, 56, 0.8);
+    }
+    
+    .interno__texto p {
+        font-size: 28px;
+        width: 110px;
+        line-height: 1.3;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 13px;
+        margin-top: 12px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+    }
+    
+    /* Destacados para laptop */
+    .destacados {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 15px;
+        max-width: 700px;
+        margin-left:240px;
+        padding: 20px;
+    }
+    
+    .starred {
+        width: 300px;
+        height: 400px;
+        padding: 15px;
+        gap: 10px;
+        transition: all 0.3s ease;
+        border-width: 1px;
+    }
+    
+    .starred:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
+        border-color: var(--color-accent-gold);
+    }
+    
+    .starred img{
+        width: 100%;
+        object-fit: fill;
+    }
+    .starred h3 {
+        font-size: 30px;
+        margin-bottom: 6px;
+    }
+    
+    .starred p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .starred a {
+        padding: 8px 12px;
+        font-size: 20px;
+        transition: all 0.3s ease;
+    }
+  
+    
+    .starred a:hover {
+        transform: scale(1.02);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    }
+    
+    .starred span {
+        font-size: 28px;
+    }
+    
+    .whatch {
+ 
+        object-fit: contain;
+        transition: transform 0.3s ease;
+    }
+    
+    .starred:hover .whatch {
+        transform: scale(1.02);
+    }
+    
+    /* Historia para laptop */
+    .Historia {
+        padding: 200px 25px;
+        margin: 0px 15px;
+        border-radius: 40px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .Historia::before {
+        height: 2px;
+    }
+    
+    .Historia h3 {
+        font-size: 50px;
+        margin-bottom: 80px;
+        letter-spacing: 1px;
+    }
+    
+    .Historia h3::after {
+        width: 120px;
+        height: 5px;
+        bottom: -6px;
+    }
+    
+    .Historia p {
+        font-size: 30px;
+        line-height: 1.5;
+        margin-bottom: 50px;
+        text-indent: 18px;
+    }
+    
+    .Historia ul {
+        max-width: 400px;
+        margin: 12px auto;
+    }
+    
+    .Historia ul li {
+        padding-left: 15px;
+        margin-bottom:50px;
+        font-size: 28px;
+        transition: color 0.3s ease;
+    }
+    
+    .Historia ul li:hover {
+        color: var(--color-text-primary);
+    }
+    
+    .Historia ul li::before {
+        font-size: 10px;
+        top: 1px;
+        transition: transform 0.3s ease;
+    }
+    
+    .Historia ul li:hover::before {
+        transform: scale(1.1);
+    }
+    
+    .Historia img {
+        max-width: 350px;
+        margin: 15px auto;
+        border-width: 2px;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+    }
+    
+    .Historia img:hover {
+        transform: scale(1.01);
+    }
+    
+    /* Footer para laptop */
+    .pie {
+        width: 100%;
+    }
+    
+    .footcontent {
+
+        height: 120px;
+        padding-top: 18px;
+        padding-left: 25px;
+        gap: 35px;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding-right: 25px;
+    }
+    
+    .footcontent .izq {
+        flex: 1;
+    }
+    
+    .footcontent .der {
+        flex: 1;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+    
+    .footcontent ul li {
+        padding-left: 12px;
+        margin-bottom: 5px;
+        font-size: 20px;
+        transition: color 0.3s ease;
+    }
+    
+    .footcontent ul li:hover {
+        color: var(--color-text-primary);
+    }
+    
+    .footcontent ul li::before {
+        font-size: 10px;
+        transition: transform 0.3s ease;
+    }
+    
+    .footcontent ul li:hover::before {
+        transform: scale(1.1);
+    }
+    
+    .footcontent a {
+        font-size: 28px;
+        transition: all 0.3s ease;
+        padding: 4px 8px;
+        border-radius: 3px;
+    }
+    
+    .footcontent a:hover {
+        color: var(--color-accent-gold);
+        background-color: rgba(212, 175, 55, 0.1);
+        transform: translateY(-1px);
+    }
+}
+
+/* PANTALLAS GRANDES - Monitores grandes (1440px+) */
+@media (min-width: 1440px) {
+    
+    body .carrusel {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        min-height: 400px !important;
+        margin: 0 !important;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .interno__texto p {
+        font-size: 28px;
+        width: 190px;
+    }
+    
+    .btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+    
+    .destacados {
+        max-width: 850px;
+        padding: 25px;
+        gap: 24px;
+    }
+    
+    .starred {
+        width: 300px;
+        height: 400px;
+        padding: 18px;
+        border-radius: 25px;
+    }
+    
+    .starred h3 {
+        font-size: 28px;
+    }
+    
+
+    
+    .Historia {
+        padding: 110px 30px;
+        margin: 0px 20px;
+        border-radius: 55px;
+    }
+    
+    .Historia h3 {
+        font-size: 45px;
+        letter-spacing: 1.5px;
+    }
+    
+    .Historia p {
+        font-size: 28px;
+
+    }
+    .Historia li{
+        font-size: 28px;
+    }
+    
+    .footcontent {
+        max-width: 100%;
+        height: 140px;
+        padding-top: 22px;
+    }
+    .der a{
+        font-size: 28;
+    }
 }
