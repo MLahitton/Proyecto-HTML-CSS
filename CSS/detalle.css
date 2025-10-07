@@ -103,10 +103,26 @@ h1 {
     animation: slide 12s infinite;
 }
 
+.Carrusel:hover .carrusel-track {
+    animation-play-state: paused;
+}
+
 .slide {
     width: 33.333%;
     flex-shrink: 0;
     object-fit: contain;
+}
+.slide {
+  transition: transform 0.4s cubic-bezier(.25,.8,.25,1), box-shadow 0.3s;
+  cursor: zoom-in;
+  box-shadow: 0 3px 18px rgba(0,0,0,0.13);
+  border-radius: 10px;
+}
+
+.slide:hover {
+  transform: scale(1.18);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.23);
+  z-index: 2;
 }
 
 @keyframes slide {
@@ -124,7 +140,49 @@ h1 {
     border-radius: 18px;
     padding: 20px;
     color: white;
+    margin-bottom: 20px;
 
+}
+.diseño-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 18px;
+  justify-content: center;
+  margin: 22px 0;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.diseño-selector label {
+  background: var(--color-bg-light, #A3B8D9);
+  color: var(--color-bg-dark, #072138);
+  border: 2px solid var(--color-accent-gold, #D4AF37);
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.diseño-selector input[type="radio"] {
+  accent-color: var(--color-accent-gold, #D4AF37);
+  margin-right: 8px;
+}
+
+.diseño-selector input[type="radio"]:checked + label,
+.diseño-selector label:has(input[type="radio"]:checked) {
+  border-color: var(--color-hover, #294766);
+  background: var(--color-accent-gold-low, #d4af37c4);
+}
+
+.diseño-selector label:hover {
+  border-color: var(--color-hover, #294766);
 }
 .eslogan{
     font-size: 30px;
