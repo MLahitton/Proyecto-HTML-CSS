@@ -110,7 +110,7 @@ h1{
 
 .reloj span.disponible {
     color: black;
-    background-color: rgb(97, 201, 97);
+    background-color: #3BB273;
 }
 
 .reloj span.agotado {
@@ -406,7 +406,7 @@ color: black;
     
     .reloj {
         width: 250px;
-        height: 400px;
+        height: 450px;
         min-height: 400px;
         padding: 15px;
         gap: 10px;
@@ -557,7 +557,7 @@ color: black;
     
     .reloj {
         width: 300px;
-        height: 400px;
+        height: 700px;
         min-height: 400px;
         padding: 18px;
         border-radius: 25px;
